@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #18181e;
+    height: 100vh;  
+}
+
+h1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 2vw;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    background-color: #262626;
+    padding: 1rem 2rem 2rem 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 90%;
+}
+
+#value {
+    font-size: 8vw;
+    color: #fff;
+    min-width: 14vw;
+    text-align: center;
+}
+
+#counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.count-button {
+    width: 6rem;
+    height: 6rem;
+    font-size: 3rem;
+    background-color: #18181e;
+    margin-right: 1rem;
+}
+
+.count-button:last-child {
+    margin-right: 0rem;
+    margin-left: 1rem;
+}
+
+#reset {
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: #2653af;
+    padding: .8rem 0;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%; /* Ajusta a largura do container em telas muito pequenas */
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    #value {
+        font-size: 4.5rem;
+        min-width: 8rem;
+    }
+
+    .count-button {
+        width: 40%;
+        font-size: 2rem;
+        margin-right: 2%;
+    }
+
+    #reset {
+        font-size: 1.5rem;
+        padding: 2% 0;
+        margin-top: 3%;
+    }
+}
+
+@media (max-width: 280px) {
+    .container {
+        width: 100%; /* Utiliza a largura total da tela no Galaxy Fold */
+        padding: 0 10px; /* Adiciona um pequeno espaçamento nas laterais do container */
+    }
+
+    h1 { 
+        font-size: 2rem;
+    }
+
+    #value {
+        font-size: 4rem;
+        min-width: 8rem;
+    }
+
+    .count-button {
+        width: 40%;
+        font-size: 2rem;
+        margin-right: 2%;
+    }
+
+    #reset {
+        font-size: 1.5rem;
+        padding: 2% 2%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+}
